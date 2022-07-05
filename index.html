@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Nikola Nikolić">    
+    <title>Nikola Nikolić • PHP Web Developer</title>
+    <link rel="shortcut icon" href="assets/imgs/favicon.ico" type="image/x-icon">
+    <!-- Font Awesome 6.0.0 -->
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.0.0/css/all.css"
+        crossorigin="anonymous">
+    <!-- Bootstrap 5.0.2 -->
+    <link rel="stylesheet" href="assets/css/bootstrap-5.0.2.min.css">
+    <!-- Custom -->
+    <link rel="stylesheet" href="assets/css/global.css">
+</head>
+<body>
+
+    <!--  Header  -->
+    <header class="active">
+        <div class="main-menu">
+            <nav class="navbar navbar-expand-lg navbar-nav-scroll">
+                <div class="container">
+                    <div class="logo-holder">
+                        <a class="navbar-brand logo" href="/">
+                            <!--  Logo  -->
+                            <svg viewBox="0 0 459 256" xmlns="http://www.w3.org/2000/svg" class="logo">
+                                <defs>
+                                    <linearGradient gradientUnits="userSpaceOnUse" x1="255.679" y1="74.668" x2="255.679"
+                                        y2="330.905" id="gradient-1" gradientTransform="matrix(1, 0, 0, 1, 0, 0)">
+                                        <stop offset="0" style="stop-color:var(--secondary)"></stop>
+                                        <stop offset="1" style="stop-color:var(--primary)"></stop>
+                                    </linearGradient>
+                                    <linearGradient gradientUnits="userSpaceOnUse" x1="113.89" y1="97.728" x2="113.89"
+                                        y2="330.561" id="gradient-2"
+                                        gradientTransform="matrix(0.934291, 0.371135, -0.448941, 1.130159, 391.539913, -73.077843)">
+                                        <stop offset="0" style="stop-color:var(--secondary)"></stop>
+                                        <stop offset="1" style="stop-color:var(--primary)"></stop>
+                                    </linearGradient>
+                                    <linearGradient gradientUnits="userSpaceOnUse" x1="113.89" y1="97.415" x2="113.89"
+                                        y2="330.561" id="gradient-0"
+                                        gradientTransform="matrix(-0.936481, -0.350717, 0.289165, -0.772131, 181.243676, 399.365469)">
+                                        <stop offset="0" style="stop-color:var(--secondary)"></stop>
+                                        <stop offset="1" style="stop-color:var(--primary)"></stop>
+                                    </linearGradient>
+                                </defs>
+                                <g transform="matrix(1.002832, 0, 0, 1.001684, -27.713268, -74.778381)">
+                                    <path d="M 117.65 127.529 C 126.101 112.619 133.236 96.859 146.861 97.43 C 161.567 98.046 170.864 117.219 175.368 127.365 C 177.615 132.427 186.289 153.087 200.078 200.359 C 201.773 206.169 171.006 268.907 163.299 283.182 C 157.624 293.694 144.952 308.983 134.549 316.55 C 120.707 326.619 105.637 330.754 86.538 330.485 C 82.422 330.427 42.723 330.302 27.635 330.302 L 117.65 127.529 Z" style="fill: url(#gradient-0);"></path>
+                                    <path d="M 133.05 103.549 C 138.259 98.827 146.164 96.576 152.09 99.121 C 155.73 100.685 160.438 103.394 163.885 108.148 C 169.009 115.215 172.733 120.742 176.986 131.372 C 179.583 137.863 188.145 163.146 189.661 167.739 C 195.717 186.089 218.84 260.785 223.198 271.636 C 227.924 283.403 231.176 294.748 248.346 309.594 C 261.271 320.77 286.485 330.855 309.321 330.905 C 318.287 330.925 336.49 328.014 344.742 325.458 C 356.474 321.825 370.551 312.165 377.211 304.934 C 378.102 303.967 373.349 306.281 372.608 306.651 C 369.786 308.063 362.841 308.184 359.785 306.09 C 344.632 295.707 339.738 285.465 330.943 263.638 C 326.441 252.466 313.179 205.144 310.729 197.353 C 291.789 137.127 282.329 105.408 269.668 93.923 C 253.097 78.892 231.971 73.749 204.499 74.799 C 166.738 76.242 158.158 83.239 153.497 85.566 C 144.749 89.934 133.05 103.549 133.05 103.549 Z" style="fill: url(#gradient-1);"></path>
+                                    <path d="M 402.463 107.461 C 416.859 81.796 417.854 73.817 431.551 74.391 C 446.335 75.01 455.682 94.285 460.21 104.485 C 462.468 109.574 471.188 130.343 485.051 177.866 C 486.755 183.707 455.259 246.778 448.359 261.129 C 443.155 271.952 429.632 287.067 419.174 294.674 C 405.259 304.796 385.307 307.823 370.908 308.683 C 366.777 308.929 326.861 308.499 311.693 308.499 L 402.463 107.461 Z" style="fill: url(#gradient-2);" transform="matrix(-1, 0, 0, -1, 796.810608, 383.135117)"></path>
+                                </g>
+                            </svg>
+                            <!-- ./Logo -->
+                        </a>
+                    </div>
+
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#header-menu"
+                        aria-controls="header-menu" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+
+                    <div class="collapse navbar-collapse offset" id="header-menu">
+                        <ul class="nav navbar-nav menu-nav justify-content-end text-uppercase">
+                            <li class="nav-item active">
+                                <a href="#homepage" class="nav-link">home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#about" class="nav-link">about</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#skills" class="nav-link">skills</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#experience" class="nav-link">experience</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#projects" class="nav-link">projects</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#contact" class="nav-link">contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- ./Header -->
+
+    <!--  Home holder  -->
+    <section id="homepage" class="home-holder">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7">
+                    <div class="banner-content text-uppercase">
+                        <h3>Hello</h3>
+                        <h1>I am Nikola Nikolić</h1>
+                        <h5>PHP Web Developer</h5>
+
+                        <div class="social-icons-header">
+                            <a href="https://github.com/nikolangit" target="_blank" rel="noopener noreferrer">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/nikola-nikolic-a2960a234" target="_blank"
+                                rel="noopener noreferrer">
+                                <i class="fa-brands fa-linkedin"></i>
+                            </a>
+                        </div>
+
+                        <div class="d-flex align-items-center">
+                            <a class="primary-btn bg-your-gradient" href="#contact">get in touch</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="you-on-pc-img-holder">
+                        <img src="assets/imgs/other/you-on-pc.svg">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ./Home holder -->
+
+    <!--  About holder  -->
+    <section id="about" class="about-holder">
+        <div class="container">
+            <div class="row justify-content-start align-items-center">
+                <div class="col-lg-5">
+                    <div class="about-img-holder">
+                        <img src="assets/imgs/other/about.svg">
+                    </div>
+                </div>
+                <div class="offset-lg-1 col-lg-5">
+                    <div class="about-info-holder">
+                        <h2>about me</h2>
+                        <p>I have undertaken several projects and I always intend to improve their results with new functions.</p>
+                        <p>I stand out with features such as paying attention to small details, writing clean code and constant improvement.</p>
+                        <p>Also, I'm well versed in relational databases and the Laravel PHP framework.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ./About holder -->
+
+    <!--  Skills holder  -->
+    <section id="skills" class="skills-holder">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 class="text-center">Skills</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="skill-items-holder">
+                    <div class="skill-item">
+                        <h4>HTML</h4>
+                        <div class="skill-img-holder">
+                            <img src="assets/imgs/skills/html.svg" alt="" class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <h4>SEO</h4>
+                        <div class="skill-img-holder">
+                            <img src="assets/imgs/skills/seo.svg" alt="" class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <h4>CSS</h4>
+                        <div class="skill-img-holder">
+                            <img src="assets/imgs/skills/css.svg" alt="" class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <h4>Bootstrap</h4>
+                        <div class="skill-img-holder">
+                            <img src="assets/imgs/skills/bootstrap.svg" alt="" class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <h4>JavaScript</h4>
+                        <div class="skill-img-holder">
+                            <img src="assets/imgs/skills/js.svg" alt="" class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <h4>jQuery</h4>
+                        <div class="skill-img-holder">
+                            <img src="assets/imgs/skills/jquery.svg" alt="" class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <h4>MySQL</h4>
+                        <div class="skill-img-holder">
+                            <img src="assets/imgs/skills/mysql.svg" alt="" class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <h4>PHP</h4>
+                        <div class="skill-img-holder">
+                            <img src="assets/imgs/skills/php.svg" alt="" class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <h4>Laravel</h4>
+                        <div class="skill-img-holder">
+                            <img src="assets/imgs/skills/laravel.svg" alt="" class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <h4>WordPress</h4>
+                        <div class="skill-img-holder">
+                            <img src="assets/imgs/skills/wordpress.svg" alt="" class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <h4>PrestaShop</h4>
+                        <div class="skill-img-holder">
+                            <img src="assets/imgs/skills/prestashop.svg" alt="" class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <h4>Magento</h4>
+                        <div class="skill-img-holder">
+                            <img src="assets/imgs/skills/magento.svg" alt="" class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <h4>SVG</h4>
+                        <div class="skill-img-holder">
+                            <img src="assets/imgs/skills/svg.svg" alt="" class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <h4>Canvas JS</h4>
+                        <div class="skill-img-holder">
+                            <img src="assets/imgs/skills/canvas.svg" alt="" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ./Skills holder -->
+
+    <!--  Experience holder  -->
+    <section id="experience" class="experience-holder">
+        <div class="container">
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item">
+                    <a href="#experience" class="nav-link show active" id="my-experience-tab" data-bs-toggle="tab" data-bs-target="#my-experience" role="tab" aria-controls="my-experience" aria-selected="true">Experience</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#my-education" class="nav-link" id="my-education-tab" data-bs-toggle="tab" data-bs-target="#my-education" role="tab" aria-controls="my-education" aria-selected="false">Education</a>
+                </li>
+            </ul>
+            <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade active show" id="my-experience" role="tabpanel" aria-labelledby="my-experience-tab">
+                    <ul class="list">
+                        <li>
+                            <span></span>
+                            <div class="body">
+                                <div class="years">2019-2020</div>
+                                <div class="info" data-show-info="0">
+                                    <h4>PHP Developer</h4>
+                                    <div>
+                                        <i class="fa-solid fa-building"></i>
+                                        Uspon DOO
+                                    </div>
+                                    <div>
+                                        <i class="fa-solid fa-location-dot"></i>
+                                        Čačak, Serbia
+                                    </div>
+                                    <div class="show-more">Show more...</div>
+                                    <div class="more-info">
+                                        <p>
+                                            <strong>Used technologies:</strong>
+                                            Git, MySQL, PHP and Laravel
+                                        </p>
+                                        <ul>
+                                            <li>Contributing 3 projects</li>
+                                            <li>Creating CSV files for importing/exporting products in both Magento and Prestashop</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <span></span>
+                            <div class="body">
+                                <div class="years">2020-2022</div>
+                                <div class="info" data-show-info="0">
+                                    <h4>PHP Developer</h4>
+                                    <div>
+                                        <i class="fa-solid fa-building"></i>
+                                        Telekod Plus DOO
+                                    </div>
+                                    <div>
+                                        <i class="fa-solid fa-location-dot"></i>
+                                        Kraljevo, Serbia
+                                    </div>
+                                    <div class="show-more">Show more...</div>
+                                    <div class="more-info">
+                                        <p>
+                                            <strong>Used technologies:</strong>
+                                            CSS, Bootstrap, JavaScript, jQuery, Ajax, MySQL, PHP, Magento 2.3,
+                                            Prestashop and Wordpress
+                                        </p>
+                                        <ul>
+                                            <li>Contributing 3 projects</li>
+                                            <li>Development of business software using RESTful API</li>
+                                            <li>Creating tests</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="tab-pane fade" id="my-education" role="tabpanel" aria-labelledby="my-education-tab">
+                    <ul class="list">
+                        <li>
+                            <span></span>
+                            <div class="body">
+                                <div class="years">2008-2012</div>
+                                <div class="info">
+                                    <h4>Tourism technician</h4>
+                                    <div>
+                                        <i class="fa-solid fa-school"></i>
+                                        Ugostiteljsko-turistička škola
+                                    </div>
+                                    <p>
+                                        <i class="fa-solid fa-location-dot"></i>
+                                        Vrnjača Banja, Serbia
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <span></span>
+                            <div class="body">
+                                <div class="years">2017-2017</div>
+                                <div class="info">
+                                    <h4>PHP Developer</h4>
+                                    <div>
+                                        <i class="fa-solid fa-school"></i>
+                                        Akademija Oxford - Course
+                                    </div>
+                                    <p>
+                                        <i class="fa-solid fa-location-dot"></i>
+                                        Kraljevo, Serbia
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <span></span>
+                            <div class="body">
+                                <div class="years">2018-2018</div>
+                                <div class="info">
+                                    <h4>PHP Programmer</h4>
+                                    <div>
+                                        <i class="fa-solid fa-school"></i>
+                                        School Rajak - Course
+                                    </div>
+                                    <p>
+                                        <i class="fa-solid fa-location-dot"></i>
+                                        Online
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <span></span>
+                            <div class="body">
+                                <div class="years">2018-2019</div>
+                                <div class="info">
+                                    <h4>Front-End Developer</h4>
+                                    <div>
+                                        <i class="fa-solid fa-school"></i>
+                                        Agencija Sveti Sava - Course
+                                    </div>
+                                    <p>
+                                        <i class="fa-solid fa-location-dot"></i>
+                                        Čačak, Serbia
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ./Experience holder -->
+
+    <!--  Projects holder  -->
+    <section id="projects" class="projects-holder">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2>Projects</h2>
+
+                    <div class="controls">
+                        <button type="button" class="control mixitup-control-active" data-filter="all">All</button>
+                        <button type="button" class="control" data-filter=".personal">Personal</button>
+                        <button type="button" class="control" data-filter=".api">API</button>
+                        <button type="button" class="control" data-filter=".games">Games</button>
+                        <button type="button" class="control" data-filter=".live">Live</button>
+                    </div>
+
+                    <div id="projects-container" class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-4">
+                        <div class="col mix personal">
+                            <div class="card h-100">
+                                <div class="card-img-holder">
+                                    <img src="assets/imgs/projects/stopwatch.jpg" class="card-img-top" alt="Stopwatch - site image preview" style="--img-scroll-size:--1px;">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Stopwatch</h5>
+                                    <p class="card-text">Responsive stopwatch with multiple themes.</p>
+
+                                    <a href="/projects/stopwatch.zip" target="_blank" rel="noopener noreferrer" class="card-btn" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-original-title="Download" aria-label="Download" download><i class="fa-solid fa-download"></i></a>
+                                </div>
+                                <div class="card-footer tech-stack-holder">
+                                    <img src="assets/imgs/skills/html.svg" alt="skill-html" loading="lazy">
+                                    <img src="assets/imgs/skills/css.svg" alt="skill-css" loading="lazy">
+                                    <img src="assets/imgs/skills/js.svg" alt="skill-js" loading="lazy">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col mix personal">
+                            <div class="card h-100">
+                                <div class="card-img-holder">
+                                    <img src="assets/imgs/projects/url-shortener.jpg" class="card-img-top" alt="URL Shortener - site image preview" style="--img-scroll-size:--1px;">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">URL Shortener</h5>
+                                    <p class="card-text">URL shortener with custom made "imitation" of cron job and limited number for saved URL's.</p>
+
+                                    <a href="https://github.com/nikolangit/url-shortener" target="_blank" rel="noopener noreferrer" class="card-btn" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-original-title="Source Code" aria-label="Source Code"><i class="fa-brands fa-github"></i></a>
+                                    <a href="/projects/url-shortener.zip" target="_blank" rel="noopener noreferrer" class="card-btn" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-original-title="Download" aria-label="Download" download><i class="fa-solid fa-download"></i></a>
+                                </div>
+                                <div class="card-footer tech-stack-holder">
+                                    <img src="assets/imgs/skills/html.svg" alt="skill-html" loading="lazy">
+                                    <img src="assets/imgs/skills/css.svg" alt="skill-css" loading="lazy">
+                                    <img src="assets/imgs/skills/js.svg" alt="skill-js" loading="lazy">
+                                    <img src="assets/imgs/skills/mysql.svg" alt="skill-mysql" loading="lazy">
+                                    <img src="assets/imgs/skills/php.svg" alt="skill-php" loading="lazy">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col mix personal api">
+                            <div class="card h-100">
+                                <div class="card-img-holder">
+                                    <img src="assets/imgs/projects/love-calculator.jpg" class="card-img-top" alt="Love Calculator - site image preview" style="--img-scroll-size:--1px;">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Love Calculator</h5>
+                                    <p class="card-text">Love calculator that uses <a href="https://rapidapi.com/ajith/api/love-calculator/" target="_blank" rel="noopener noreferrer">Rapid API's</a>.</p>
+
+                                    <a href="/projects/love-calculator.zip" target="_blank" rel="noopener noreferrer" class="card-btn" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-original-title="Download" aria-label="Download" download><i class="fa-solid fa-download"></i></a>
+                                </div>
+                                <div class="card-footer tech-stack-holder">
+                                    <img src="assets/imgs/skills/html.svg" alt="skill-html" loading="lazy">
+                                    <img src="assets/imgs/skills/css.svg" alt="skill-css" loading="lazy">
+                                    <img src="assets/imgs/skills/js.svg" alt="skill-js" loading="lazy">
+                                    <img src="assets/imgs/skills/php.svg" alt="skill-php" loading="lazy">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col mix personal api">
+                            <div class="card h-100">
+                                <div class="card-img-holder">
+                                    <img src="assets/imgs/projects/flickr.jpg" class="card-img-top" alt="Flickr - site image preview" style="--img-scroll-size:--1px;">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Flickr</h5>
+                                    <p class="card-text">It fetches data from different Flickr's API's.</p>
+                                    
+                                    <a href="/projects/flickr.zip" target="_blank" rel="noopener noreferrer" class="card-btn" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-original-title="Download" aria-label="Download" download><i class="fa-solid fa-download"></i></a>
+                                </div>
+                                <div class="card-footer tech-stack-holder">
+                                    <img src="assets/imgs/skills/html.svg" alt="skill-html" loading="lazy">
+                                    <img src="assets/imgs/skills/css.svg" alt="skill-css" loading="lazy">
+                                    <img src="assets/imgs/skills/bootstrap.svg" alt="skill-bootstrap" loading="lazy">
+                                    <img src="assets/imgs/skills/jquery.svg" alt="skill-jquery" loading="lazy">
+                                    <img src="assets/imgs/skills/js.svg" alt="skill-js" loading="lazy">
+                                    <img src="assets/imgs/skills/mysql.svg" alt="skill-mysql" loading="lazy">
+                                    <img src="assets/imgs/skills/php.svg" alt="skill-php" loading="lazy">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col mix personal games">
+                            <div class="card h-100">
+                                <div class="card-img-holder">
+                                    <img src="assets/imgs/projects/snake-game.png" class="card-img-top" alt="Snake game - no image" style="--img-scroll-size:--1px;">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Snake game</h5>
+                                    <p class="card-text">Simple snake game.</p>
+
+                                    <a href="https://github.com/nikolangit/snake-game" target="_blank" rel="noopener noreferrer" class="card-btn" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-original-title="Source Code" aria-label="Source Code"><i class="fa-brands fa-github"></i></a>
+                                    <a href="/projects/snake-game.zip" target="_blank" rel="noopener noreferrer" class="card-btn" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-original-title="Download" aria-label="Download" download><i class="fa-solid fa-download"></i></a>
+                                </div>
+                                <div class="card-footer tech-stack-holder">
+                                    <img src="assets/imgs/skills/html.svg" alt="skill-html" loading="lazy">
+                                    <img src="assets/imgs/skills/css.svg" alt="skill-css" loading="lazy">
+                                    <img src="assets/imgs/skills/js.svg" alt="skill-js" loading="lazy">
+                                    <img src="assets/imgs/skills/canvas.svg" alt="skill-canvas" loading="lazy">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col mix personal games">
+                            <div class="card h-100">
+                                <div class="card-img-holder">
+                                    <img src="assets/imgs/projects/maze-game.png" class="card-img-top" alt="Maze - no image" style="--img-scroll-size:--1px;">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Maze</h5>
+                                    <p class="card-text">Simple maze game.</p>
+
+                                    <a href="https://github.com/nikolangit/maze-game" target="_blank" rel="noopener noreferrer" class="card-btn" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-original-title="Source Code" aria-label="Source Code"><i class="fa-brands fa-github"></i></a>
+                                    <a href="/projects/maze-game.zip" target="_blank" rel="noopener noreferrer" class="card-btn" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-original-title="Download" aria-label="Download" download><i class="fa-solid fa-download"></i></a>
+                                </div>
+                                <div class="card-footer tech-stack-holder">
+                                    <img src="assets/imgs/skills/html.svg" alt="skill-html" loading="lazy">
+                                    <img src="assets/imgs/skills/css.svg" alt="skill-css" loading="lazy">
+                                    <img src="assets/imgs/skills/js.svg" alt="skill-js" loading="lazy">
+                                    <img src="assets/imgs/skills/canvas.svg" alt="skill-canvas" loading="lazy">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col mix cms live">
+                            <div class="card h-100">
+                                <div class="card-img-holder">
+                                    <img src="assets/imgs/projects/ordinacija-maric.jpg" class="card-img-top"
+                                        alt="Ordinacija Marić - site image preview" style="--img-scroll-size:-246px;">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Ordinacija Marić</h5>
+                                    <p class="card-text"></p>
+
+                                    <a href="https://ginekologmaric.co.rs/" target="_blank" rel="noopener noreferrer" class="card-btn" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-original-title="Visit" aria-label="Visit">
+                                        <i class="fa-solid fa-link"></i>
+                                    </a>
+                                </div>
+                                <div class="card-footer tech-stack-holder">
+                                    <img src="assets/imgs/skills/wordpress.svg" alt="skill-wordpress" loading="lazy">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col mix cms live">
+                            <div class="card h-100">
+                                <div class="card-img-holder">
+                                    <img src="assets/imgs/projects/agencija-sveti-sava.jpg" class="card-img-top" alt="Agencija Sveti Sava - site image preview" style="--img-scroll-size:-198px;">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Agencija Sveti Sava</h5>
+                                    <p class="card-text"></p>
+
+                                    <a href="http://www.svetisava.co.rs/" target="_blank" rel="noopener noreferrer" class="card-btn" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-original-title="Visit" aria-label="Visit">
+                                        <i class="fa-solid fa-link"></i>
+                                    </a>
+                                </div>
+                                <div class="card-footer tech-stack-holder">
+                                    <img src="assets/imgs/skills/wordpress.svg" alt="skill-wordpress" loading="lazy">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ./Projects holder -->
+
+    <!--  Contact holder  -->
+    <section id="contact" class="contact-holder">
+        <div class="container">
+            <div class="row">
+                <div class="offset-md-2 col-md-8">
+                    <form action="https://forms.un-static.com/forms/YOUR_ENDPOINT_REFERENCE" method="POST">
+                        <h1>Contact</h1>
+
+                        <div class="row">
+                            <div class="col">
+                                <input type="text" name="username" class="form-control" placeholder="Enter your name" aria-label="Enter your name">
+                            </div>
+                            <div class="col">
+                                <input type="email" name="email" class="form-control" placeholder="Enter email address" aria-label="Enter email address">
+                            </div>
+                        </div>
+
+                        <div class="form-group my-4">
+                            <input type="text" name="subject" class="form-control" placeholder="Enter Subject" aria-label="Enter Subject">
+                        </div>
+
+                        <div class="form-group">
+                            <textarea rows="10" cols="10" type="text" name="subject" class="form-control" placeholder="Enter Message" aria-label="Enter Message"></textarea>
+                        </div>
+
+                        <button type="submit" name="submit" class="mt-5 primary-btn bg-your-gradient">send message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ./Contact holder -->
+
+    <!--  Footer  -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="footer-logo">
+                        <a href="/">
+                            <!--  Logo  -->
+                            <svg viewBox="0 0 459 256" xmlns="http://www.w3.org/2000/svg" class="logo">
+                                <defs>
+                                    <linearGradient gradientUnits="userSpaceOnUse" x1="255.679" y1="74.668" x2="255.679"
+                                        y2="330.905" id="gradient-1" gradientTransform="matrix(1, 0, 0, 1, 0, 0)">
+                                        <stop offset="0" style="stop-color:var(--secondary)"></stop>
+                                        <stop offset="1" style="stop-color:var(--primary)"></stop>
+                                    </linearGradient>
+                                    <linearGradient gradientUnits="userSpaceOnUse" x1="113.89" y1="97.728" x2="113.89"
+                                        y2="330.561" id="gradient-2"
+                                        gradientTransform="matrix(0.934291, 0.371135, -0.448941, 1.130159, 391.539913, -73.077843)">
+                                        <stop offset="0" style="stop-color:var(--secondary)"></stop>
+                                        <stop offset="1" style="stop-color:var(--primary)"></stop>
+                                    </linearGradient>
+                                    <linearGradient gradientUnits="userSpaceOnUse" x1="113.89" y1="97.415" x2="113.89"
+                                        y2="330.561" id="gradient-0"
+                                        gradientTransform="matrix(-0.936481, -0.350717, 0.289165, -0.772131, 181.243676, 399.365469)">
+                                        <stop offset="0" style="stop-color:var(--secondary)"></stop>
+                                        <stop offset="1" style="stop-color:var(--primary)"></stop>
+                                    </linearGradient>
+                                </defs>
+                                <g transform="matrix(1.002832, 0, 0, 1.001684, -27.713268, -74.778381)">
+                                    <path
+                                        d="M 117.65 127.529 C 126.101 112.619 133.236 96.859 146.861 97.43 C 161.567 98.046 170.864 117.219 175.368 127.365 C 177.615 132.427 186.289 153.087 200.078 200.359 C 201.773 206.169 171.006 268.907 163.299 283.182 C 157.624 293.694 144.952 308.983 134.549 316.55 C 120.707 326.619 105.637 330.754 86.538 330.485 C 82.422 330.427 42.723 330.302 27.635 330.302 L 117.65 127.529 Z"
+                                        style="fill: url(#gradient-0);"></path>
+                                    <path
+                                        d="M 133.05 103.549 C 138.259 98.827 146.164 96.576 152.09 99.121 C 155.73 100.685 160.438 103.394 163.885 108.148 C 169.009 115.215 172.733 120.742 176.986 131.372 C 179.583 137.863 188.145 163.146 189.661 167.739 C 195.717 186.089 218.84 260.785 223.198 271.636 C 227.924 283.403 231.176 294.748 248.346 309.594 C 261.271 320.77 286.485 330.855 309.321 330.905 C 318.287 330.925 336.49 328.014 344.742 325.458 C 356.474 321.825 370.551 312.165 377.211 304.934 C 378.102 303.967 373.349 306.281 372.608 306.651 C 369.786 308.063 362.841 308.184 359.785 306.09 C 344.632 295.707 339.738 285.465 330.943 263.638 C 326.441 252.466 313.179 205.144 310.729 197.353 C 291.789 137.127 282.329 105.408 269.668 93.923 C 253.097 78.892 231.971 73.749 204.499 74.799 C 166.738 76.242 158.158 83.239 153.497 85.566 C 144.749 89.934 133.05 103.549 133.05 103.549 Z"
+                                        style="fill: url(#gradient-1);"></path>
+                                    <path
+                                        d="M 402.463 107.461 C 416.859 81.796 417.854 73.817 431.551 74.391 C 446.335 75.01 455.682 94.285 460.21 104.485 C 462.468 109.574 471.188 130.343 485.051 177.866 C 486.755 183.707 455.259 246.778 448.359 261.129 C 443.155 271.952 429.632 287.067 419.174 294.674 C 405.259 304.796 385.307 307.823 370.908 308.683 C 366.777 308.929 326.861 308.499 311.693 308.499 L 402.463 107.461 Z"
+                                        style="fill: url(#gradient-2);"
+                                        transform="matrix(-1, 0, 0, -1, 796.810608, 383.135117)"></path>
+                                </g>
+                            </svg>
+                            <!-- ./Logo -->
+
+                            <span class="text-uppercase">Nikola Nikolić</span>
+                        </a>
+                    </div>
+
+                    <nav class="navbar navbar-light justify-content-center">
+                        <ul class="nav">
+                            <li class="nav-item active">
+                                <a href="#homepage" class="nav-link text-white">home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#about" class="nav-link text-white">about</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#skills" class="nav-link text-white">skills</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#experience" class="nav-link text-white">experience</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#projects" class="nav-link text-white">projects</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#contact" class="nav-link text-white">contact</a>
+                            </li>
+                        </ul>
+                    </nav>
+
+                    <div class="footer-socials-holder">
+                        <a href="https://github.com/nikolangit" target="_blank" rel="noopener noreferrer">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/nikola-nikolic-a2960a234" target="_blank"
+                            rel="noopener noreferrer">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center footer-text">Copyright ©2022 by Nikola Nikolić. All rights reserved</div>
+        </div>
+    </footer>
+    <!-- ./Footer -->
+
+    <script src="assets/js/bootstrap-5.0.2.bundle.min.js"></script>
+    <script src="assets/js/mixitup.min.js"></script>
+    <script src="assets/js/main.js"></script>
+
+</body>
+</html>
