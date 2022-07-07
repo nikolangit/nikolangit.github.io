@@ -4,12 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Nikola Nikolić">    
+    <meta name="author" content="Nikola Nikolić">
+    <!-- Share image -->
+    <meta property="og:title" content="Nikola Nikolić - Portfolio image"/>
+    <meta property="og:type" content="image/svg+xml"/>
+    <meta property="og:url" content="https://nikolangit.github.io"/>
+    <meta property="og:image" content="https://nikolangit.github.io/assets/imgs/other/me-on-pc.svg"/>
+    <meta property="og:image:secure_url" content="https://nikolangit.github.io/assets/imgs/other/me-on-pc.svg"/>
+    <meta property="og:image:width" content="500"/>
+    <meta property="og:image:height" content="500"/>
     <title>Nikola Nikolić • PHP Web Developer</title>
     <link rel="shortcut icon" href="assets/imgs/favicon.ico" type="image/x-icon">
     <!-- Font Awesome 6.0.0 -->
-    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.0.0/css/all.css"
-        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.0.0/css/all.css" crossorigin="anonymous">
     <!-- Bootstrap 5.0.2 -->
     <link rel="stylesheet" href="assets/css/bootstrap-5.0.2.min.css">
     <!-- Custom -->
@@ -99,12 +106,14 @@
                         <h5>PHP Web Developer</h5>
 
                         <div class="social-icons-header">
+                            <a href="https://www.linkedin.com/in/nikola-nikolic-a2960a234" target="_blank" rel="noopener noreferrer">
+                                <i class="fa-brands fa-linkedin"></i>
+                            </a>
+                            <a href="https://join.skype.com/invite/iDuN3IXYoxR9" target="_blank" rel="noopener noreferrer">
+                                <i class="fa-brands fa-skype"></i>
+                            </a>
                             <a href="https://github.com/nikolangit" target="_blank" rel="noopener noreferrer">
                                 <i class="fa-brands fa-github"></i>
-                            </a>
-                            <a href="https://www.linkedin.com/in/nikola-nikolic-a2960a234" target="_blank"
-                                rel="noopener noreferrer">
-                                <i class="fa-brands fa-linkedin"></i>
                             </a>
                         </div>
 
@@ -115,7 +124,7 @@
                 </div>
                 <div class="col-lg-5">
                     <div class="you-on-pc-img-holder">
-                        <img src="assets/imgs/other/you-on-pc.svg">
+                        <img src="assets/imgs/other/me-on-pc.svg">
                     </div>
                 </div>
             </div>
@@ -277,11 +286,12 @@
                                     <div class="more-info">
                                         <p>
                                             <strong>Used technologies:</strong>
-                                            Git, MySQL, PHP and Laravel
+                                            CSS, Bootstrap, JavaScript, jQuery, Ajax, MySQL, PHP, Magento, PrestaShop and Wordpress
                                         </p>
                                         <ul>
                                             <li>Contributing 3 projects</li>
-                                            <li>Creating CSV files for importing/exporting products in both Magento and Prestashop</li>
+                                            <li>Creating new design</li>
+                                            <li>Creating program for importing/exporting CSV files in Magento and PrestaShop</li>
                                         </ul>
                                     </div>
                                 </div>
@@ -305,12 +315,12 @@
                                     <div class="more-info">
                                         <p>
                                             <strong>Used technologies:</strong>
-                                            CSS, Bootstrap, JavaScript, jQuery, Ajax, MySQL, PHP, Magento 2.3,
-                                            Prestashop and Wordpress
+                                            CSS, JavaScript, Git, MySQL, PHP and Laravel
                                         </p>
                                         <ul>
                                             <li>Contributing 3 projects</li>
                                             <li>Development of business software using RESTful API</li>
+                                            <li>Developing CMS and B2B projects for company's client</li>
                                             <li>Creating tests</li>
                                         </ul>
                                     </div>
@@ -680,17 +690,19 @@
                     </nav>
 
                     <div class="footer-socials-holder">
+                        <a href="https://www.linkedin.com/in/nikola-nikolic-a2960a234" target="_blank" rel="noopener noreferrer">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
+                        <a href="https://join.skype.com/invite/iDuN3IXYoxR9" target="_blank" rel="noopener noreferrer">
+                            <i class="fa-brands fa-skype"></i>
+                        </a>
                         <a href="https://github.com/nikolangit" target="_blank" rel="noopener noreferrer">
                             <i class="fa-brands fa-github"></i>
-                        </a>
-                        <a href="https://www.linkedin.com/in/nikola-nikolic-a2960a234" target="_blank"
-                            rel="noopener noreferrer">
-                            <i class="fa-brands fa-linkedin"></i>
                         </a>
                     </div>
                 </div>
             </div>
-            <div class="text-center footer-text">Copyright ©2022 by Nikola Nikolić. All rights reserved</div>
+            <div class="text-center footer-text">Copyright &copy;<span id="year"></span> by Nikola Nikolić. All rights reserved</div>
         </div>
     </footer>
     <!-- ./Footer -->

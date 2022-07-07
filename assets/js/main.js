@@ -2,8 +2,12 @@ const elm_header         = document.getElementsByTagName('header')[0],
     elm_show_more        = document.getElementsByClassName('show-more'),
     elm_header_nav_items = document.querySelectorAll('header .nav-item'),
     elm_sections         = document.getElementsByTagName('section'),
-    elm_card_img_holder  = document.querySelectorAll('.card-img-holder > img')
+    elm_card_img_holder  = document.querySelectorAll('.card-img-holder > img'),
+    elm_year             = document.getElementById('year')
 ;
+
+// Set year.
+elm_year.textContent = (new Date()).getFullYear();
 
 let elm_header_nav_item_active = 0;
 
