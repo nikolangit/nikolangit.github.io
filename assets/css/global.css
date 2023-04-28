@@ -318,7 +318,7 @@ footer .footer-logo>a>span {
     font-size: 1.7rem;
 }
 
-.social-icons-header>a {
+.social-icons-header>a:first-child {
     margin-right: .5rem;
 }
 
