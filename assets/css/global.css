@@ -258,7 +258,7 @@ footer .footer-socials-holder a:hover {
 }
 
 footer .footer-text {
-    color: #797979;
+    color: #afafaf;
 }
 
 footer .footer-logo {
@@ -302,7 +302,7 @@ footer .footer-logo>a>span {
     font-weight: bold;
 }
 
-.home-holder .banner-content h5 {
+.home-holder .banner-content h4 {
     margin-bottom: 0;
     font-size: 1.5rem;
     font-weight: bold;
